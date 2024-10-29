@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fira+Sans+Extra+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./src/css/switch.css">
+    <link rel="stylesheet" href="./src/css/fonts.css">
+    <link rel="stylesheet" href="./src/css/style.css">
+    <script render src="https://kit.fontawesome.com/28238ce337.js" crossorigin="anonymous"></script>
+    <title>Portfolio</title>
+</head>
+
+<body class="bg-color-gray-01 color-gray-16">
+    <header>
+        <h1 class="fira-sans-extra-condensed-extrabold">PORTFOLIO</h1>
+        <nav>
+            <ul class="fira-sans-extra-condensed-medium">
+                <li class="box-shadow-black"><a href="#home">HOME</a></li>
+                <li class="box-shadow-black"><a href="#projects">PROJECTS</a></li>
+                <li class="box-shadow-black"><a href="#contact">CONTACT</a></li>
+            </ul>
+        </nav>
+        <div class="hamburguer hamburguer-visibility" onclick="activeMenu()">
+            <div class="bg-color-gray-16"></div>
+            <div class="bg-color-gray-16"></div>
+            <div class="bg-color-gray-16"></div>
+        </div>
+        <div class="but-switch">
+            <div id="switch">
+                <input id="switch-shadow" class="switch switch-shadow-1" type="checkbox"
+                    onClick="selectBackground()"></input>
+                <label for="switch-shadow"></label>
+            </div>
+        </div>
+
+    </header>
+
+
+    <div id="sideMenu" class="sideMenu off-menu">
+        <nav>
+            <ul id="menu" class="fira-sans-extra-condensed-regular display-none">
+                <li class="box-shadow-black"><a href="#home">HOME</a></li>
+                <li class="box-shadow-black"><a href="#projects">PROJECTS</a></li>
+                <li class="box-shadow-black"><a href="#contact">CONTACT</a></li>
+            </ul>
+        </nav>
+    </div>
+
+
+    <section id="home">
+        <div class="box-shadow-black item-flex">
+            <h1>
+                Hello!!! My name is Fernando<span>.</span>
+            </h1>
+
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut magni officiis doloremque alias rem
+                deleniti sed modi voluptate illum explicabo voluptates quas reiciendis sint, qui laboriosam ipsam,
+                nostrum sequi corrupti?
+            </p>
+        </div>
+        <div class="margin-left-30 box-shadow-black item-flex">
+            <img src="./assets/perfil-work.jpg" alt="perfil">
+        </div>
+    </section>
+
+    <h2>PROJECTS</h2>
+    <section id="projects">
+        <div class="box-shadow-black item-flex">
+            <a href="https://fernandodev15.github.io/pageCar" target="_blank">
+                <img src="https://github.com/FernandoDev15/FernandoDev15/assets/102058133/b61df9c7-7615-4c02-8ce9-f9697c2d2549"
+                    alt="cars page" height="300px">
+            </a>
+            <a href="">Codigo</a>
+        </div>
+        <div class="box-shadow-black item-flex">
+            <a href="https://fernandodev15.github.io/Pokedex-basic/" target="_blank">
+                <img src="https://i.picasion.com/pic92/f19f37d1a34cb760e901d2c8afe4a46a.gif" alt="pokedex-basic" width="100%" height="300px">
+            </a>
+        </div>
+    </section>
+
+    <footer id="contact">
+        <nav>
+            <ul>
+                <li class="box-shadow-black"><a href="mailto:nando15gaspari@gmail.com" target="_blank"><i class="fa-solid fa-at fa-lg"></i> EMAIL</a></li>
+                <li class="box-shadow-black"><a href="https://github.com/FernandoDev15" target="_blank"><i class="fa-brands fa-github fa-lg"></i> REPOSITORIES</a></li>
+                <li class="box-shadow-black"><a href="https://wa.me/+5513981611233" target="_blank"><i class="fa-brands fa-whatsapp fa-lg"></i> PHONE</a></li>
+            </ul>
+        </nav>   
+    </footer>
+
+    <script src="./src/js/script.js"></script>
+</body>
+
+</html>

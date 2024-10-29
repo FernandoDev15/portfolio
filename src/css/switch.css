@@ -1,0 +1,65 @@
+.but-switch {
+    position: absolute;
+    right: 3vw;
+    top: 2vh;
+    z-index: 999;  
+}
+
+.switch {
+    position: relative;
+    margin-left: -99999px;
+    visibility: hidden;
+   
+}
+
+.switch+label {
+    display: block;
+    position: relative;
+    bottom: 1.1rem;
+    cursor: pointer;
+    outline: none;
+    user-select: none;
+}
+
+.switch-shadow-1+label {
+    padding: 0.3px;
+    width: 30px;
+    height: 15px;
+    background-color: #b881d1;
+    border-radius: 15px;
+}
+
+.switch-shadow-1+label:before,
+.switch-shadow-1+label:after {
+    display: block;
+    position: absolute;
+    top: 0.5px;
+    left: 0.5px;
+    bottom: 0.5px;
+    content: '';
+}
+
+.switch-shadow-1+label:before {
+    right: 0.5px;
+    background-image: linear-gradient(to top, #b881d1 25%, #3c0c4b);
+    border-radius: 15px;
+    transition: all 0.4s;
+}
+
+.switch-shadow-1+label:after {
+    width: 15.5px;
+    background-image: linear-gradient(to bottom, #1d1d1d 25%, #f4f4f8);
+    border-radius: 50%;
+    box-shadow: 0 0.5px 0.25px #333333;
+    transition: all 0.4s;
+}
+
+.switch-shadow-1:checked+label:before {
+    background-image: linear-gradient(to bottom, #b881d1 25%, #3c0c4b)
+}
+
+.switch-shadow-1:checked+label:after {
+    background-image: linear-gradient(to top, #1d1d1d, #f4f4f8);
+    transform: translateX(15px);
+}
+
